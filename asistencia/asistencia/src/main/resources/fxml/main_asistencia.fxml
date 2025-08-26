@@ -8,5 +8,6 @@
       <TextField fx:id="txtDato" layoutX="200.0" layoutY="78.0" />
       <Button layoutX="148.0" layoutY="78.0" lineSpacing="5.0" mnemonicParsing="false" onAction="#enviar" text="xDDD" />
       <Label fx:id="idMsg" graphicTextGap="5.0" layoutX="200.0" layoutY="147.0" prefHeight="17.0" prefWidth="149.0" text="Label" />
+      <Button layoutX="355.0" layoutY="78.0" mnemonicParsing="false" onAction="#regEstudiante" text="dXXX" />
    </children>
 </AnchorPane>

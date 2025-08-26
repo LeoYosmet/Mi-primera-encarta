@@ -33,7 +33,7 @@ public class ClaseExterna {
         void otraoperacion3(){
             System.out.println("La operacion de division es: " + (a/b));
 
-            
+
             System.out.println("---Y en la siguinete pregunta a CHAT GPT---");
         }
     }

@@ -1,0 +1,40 @@
+package pe.edu.upeu.asistencia.sevicio;
+
+import org.springframework.stereotype.Service;
+import pe.edu.upeu.asistencia.modelo.Estudiante;
+
+import java.util.ArrayList;
+import java.util.List;
+@Service
+public class EstudianteServicioTmp implements EstudianteServicio{
+    List<Estudiante> listaEstudiantes=new ArrayList<>();
+
+    @Override
+    public void saveEntidad(Estudiante estudiante){
+        listaEstudiantes.add(estudiante);
+    }
+
+    @Override
+    public List<Estudiante> findAllEntidades() {
+        return listaEstudiantes;
+    }
+
+    @Override
+    public void updateEntidad(Estudiante estudiante, int index) {
+        listaEstudiantes.set(index, estudiante);
+
+    }
+
+    @Override
+    public void deleteEntidad(int index) {
+        listaEstudiantes.remove(index);
+
+    }
+
+    @Override
+    public Estudiante findEntidad(int index) {
+        return listaEstudiantes.get(index);
+    }
+
+
+}
