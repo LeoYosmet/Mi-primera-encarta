@@ -15,8 +15,13 @@ public class ParticipanteServicioImp extends ParticipanteRepositorio implements 
     }
 
     @Override
-    public List<Participante> findAll() {
+    public List<Participante> findAll() { //APLICAMOS POLIMORFISMO
+
+        if(listaParticipantes.isEmpty()){
+            return super.findAll();
+        }
         return listaParticipantes;
+
     }
 
     @Override
